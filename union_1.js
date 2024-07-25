@@ -38,37 +38,14 @@ function union(arrays){
    console.log(union([arr1, arr2, arr3])); // should log: [5, 10, 15, 88, 1, 7, 100]
   
   
-  //Solution 1: failed
-  //initialize accumulator to be length of arrays
-  //set up a loop
-      //iterate through sub arrays using forEach
-    //store element in a new array, but if the element already exists then skip
-    //once the loop as gone through one of the sub arrays pop off the sub array on the accumulator
-    //return the new array once all subarrays have left
-    
-  //Solution 2: This one was close, but the while loop was redundant
-  //iterate through subArrays and store all elements in new flattened array
-  //accumulator is length of new array 
-  // 
+  //Second solution: Much shorter tbh
   // function union(arrays){
+  //   let set1 = new Set(arrays.flat());
+  //   let newArrays = [];
     
-  //   if(!Array.isArray(arrays)){ 
-  //     return `Please enter arrays`;
-  //   }
-  //   	const current = flatten(arrays); 
-  //   let acc = current;
-  //   let result = [];
-   
-  //   while(acc.length)
-  //     {
-  //       acc.pop(); 
-  //       current.forEach((el) =>{
-  //         if(!result.includes(el)){
-  //           result.push(el);
-  //         }
-          
-  //       });
-  //     }
+  //   set1.forEach((el) => {newArrays.push(el)});
     
-  //   return result;
+    
+  //   return newArrays;
+    
   // }
