@@ -49,3 +49,16 @@ function union(arrays){
   //   return newArrays;
     
   // }
+////////////////////////////////////////////////
+  // Using Reduce!
+
+  // function union(arrayofArrays){
+  //   return arrayofArrays.reduce((output,current) =>{
+  //     current.forEach(el =>{
+  //       if(!output.includes(el)){
+  //         output.push(el);
+  //       }
+  //     })
+  //     return output;
+  //   })
+  // }
